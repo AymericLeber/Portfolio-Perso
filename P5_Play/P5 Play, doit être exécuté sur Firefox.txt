@@ -1,0 +1,51 @@
+function preload(){		Fonction qui permet de charger des images
+	img=loadImage("asset/monimage.png")	
+}
+
+createSprite(x,y) Permet de crée un Sprite
+
+.addImage(img) Ajoute une image au Sprite
+
+drawSprites() Fait apparaitre le Sprite
+
+.position.x coordonnée x du sprite
+
+.position y coordonnée y du sprite
+
+.setVelocity(x,y) Vitesse de x et de y par image
+
+.velocity.x=2 Vitesse de x par image
+
+.velocity.y=2 Vitesse de y par image
+
+.bounce(sprite2,callback) Collisions et ou rebond avec un sprite. Le callback permet de faire appele à une fonction quand il y a une collision
+
+.mass=15 "Masse" d'un sprite, ici 15 par défaut 1
+
+
+.immovable=true Le sprite sera "insensible" a la collision
+
+.overlap Détecte les collisions sans faire de rebond
+
+.removed Détecte si un sprite exite encore, true = Aucun sprite
+
+createSprite(positionX, positionY, tailleX, taille Y) Permet de crée un Sprite sans image
+
+group_sprite=new Group();
+
+EXEMPLE :
+
+    group_smiley=new Group();
+    for (i=0;i<10;i=i+1){
+        var smiley_sprite;
+        smiley_sprite=createSprite(random(20,780),random(20,280));
+        smiley_sprite.addImage(img);
+        smiley_sprite.setVelocity(random(-5,5),random(-5,5));
+        group_smiley.add(smiley_sprite);
+	}
+
+group_sprite.bounce(group_sprite) fait rebondir les sprites du memes groupes entre eux
+
+Si vous avez X.overlap(Y,contact); et function contact(sprite_1,sprite_2) alors X correspond à sprite_1 et Y correspond à sprite_2 (avec X et Y des sprites). Si X ou Y est un groupe de sprite (comme dans l'exemple ci-dessus), le fonctionnement reste le même : sprite_1 ou sprite_2 correspond au sprite du groupe qui a été concerné par la collision.
+
+millis() renvoie le nombre de milliseconde

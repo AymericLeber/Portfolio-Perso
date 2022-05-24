@@ -1,0 +1,105 @@
+point(x,y)
+
+stroke(r,g,b) couleur du point
+
+line(x1,y1,x2,y2); x1 coordonnée x du point de départ de la ligne y1 coordonnée y du point de départ de la ligne x2 coordonnée x du point d'arrivée de la ligne y2 coordonnée y du point d'arrivée de la ligne
+
+ellipse(x,y,a,b); a largeur horizontale b largeur verticale
+
+triangle(x1,y1,x2,y2,x3,y3); (x1,y1) les coordonnées du point 1, (x2,y2) les coordonnées du point 2 et (x3,y3) les coordonnées du point 3.
+
+random(20,50);
+
+quad(x1,y1,x2,y2,x3,y3,x4,y4);
+
+rect(x,y,a,b); (x,y) les coordonnées du coin supérieur-gauche, a la "largeur horizontale" et b la "largeur verticale".
+
+arc(x,y,a,b,angle_dep,angle_arr); les angles doivent être donnés en radian. radians(angle_degré)
+
+bezier(x1,y1,x2,y2,x3,y3,x4,y4); (très compliqué)
+
+stroke(r,g,b); couleur du contour
+
+fill(r,g,b,t); couleur de remplissage, t=transparence
+
+noStroke() pas de contour
+
+noFill() pas de remplissage
+
+strokeWeight(x); largeur du contour, x=épaisseur
+
+floor(x); x=nombre, La fonction "floor" permet d'arrondir un nombre
+
+rotate(a);
+
+translate(dx,dy);
+
+scale(x);
+
+push(); sauvegarde
+
+pop(); restaure la sauvegarde
+
+framerate(x);
+
+function mousePressed() "mousePressed" est exécuté une fois quand l'utilisateur appuie sur un des boutons de la souris
+
+function mouseReleased() "mouseReleased" est exécuté une fois quand un bouton de la souris qui avait été préalablement pressé est relâché.
+
+function mouseMoved() "mouseMoved" est exécuté à chaque image tant que la souris se déplace
+
+function mouseDragged() "mouseDragged" est exécuté à chaque image tant que la souris se déplace et que le bouton de la souris est enfoncé.
+
+mouseX coordonnée de la souris en X
+
+mouseY coordonnée de la souris en Y
+
+pmouseX coordonnée de la souris entre 2 images
+
+pmouseY coordonnée de la souris entre 2 images
+
+function keyPressed()  "keyPressed" est exécuté une fois quand l'utilisateur enfonce une touche
+
+function keyReleased() "keyReleased" est exécuté une fois quand une touche du clavier est relâchée
+
+keyCode==x x est la touche enfoncé	http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+
+text(texte,x,y); la chaine de caractères, la coordonnée x du coin "haut-gauche" du texte, la coordonnée y du coin "haut-gauche" du texte. Peu être coloré par fill
+
+textSize(x); Taille du texte
+
+textAlign(RIGHT);
+
+textAlign(CENTER);
+
+textAlign(LEFT);
+
+.lenght connaitre le nombre de caractères présents dans une chaîne à l'aide de "length".
+
+.charAt(3) "charAt" retourne le caractère situé à l'index qui a été passé en paramètre
+
+"toUpperCase" permet de convertir tous les caractères d'une chaîne en majuscules.
+
+"toLowerCase" permet de convertir tous les caractères d'une chaîne en minuscules.
+
+.substring(index_deb, index_fin); "substring" permet de retourner une partie d'une chaîne de caractères. Elle peut prendre un ou deux paramètres
+
+.indexOf(motif) "indexOf" permet de recherche un motif de caractères (une suite de caractères) dans une chaîne.
+
+split(str,";"); La méthode "split" prend 2 arguments : la chaîne de caractères à séparer et le "caractère séparateur"
+
+splitTokens(str," ;,!"); "splitTokens" est une méthode "cousine" de la méthode "split" qui permet de considérer plusieurs "caractères séparateurs" en même temps.
+
+createCanvas(windowWidth,windowHeight); crée un canvas de la taille de l'écran actuelle.
+
+Pour adapter la page en direct : 
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+
+
+
+
+
